@@ -42,8 +42,8 @@ MONGODB_URI = "mongodb+srv://aminebaggari12:amineba@clamimoc.qj2hllv.mongodb.net
 client = pymongo.MongoClient(MONGODB_URI)
 db = client["wormgpt"]
 collection = db["allowed_users"]
-allowed_users = ["K_HACKER_ANONYMOUS", "Mr_majnu72"]
-owners = ["K_HACKER_ANONYMOUS", "Mr_majnu72"]
+allowed_users = ["aminebaggari", "aminebaggarii"]
+owners = ["aminebaggari", "aminebaggarii"]
 
 for user in collection.find({}):
     allowed_users.append(user["telegram_username"])
@@ -130,7 +130,7 @@ def start_bot(client, message):
                 InlineKeyboardButton(text="❇ Support NetWork ❇", url=f"https://t.me/DARK_WORM_GPT_AI"),
             ],
             [
-                InlineKeyboardButton(text="💠 Creator Of Bot 💠", url=f"https://t.me/K_HACKER_ANONYMOUS"),
+                InlineKeyboardButton(text="💠 Creator Of Bot 💠", url=f"https://t.me/aminebaggari"),
             ],
             [
                 InlineKeyboardButton(text="🔰 Buy WormGPT 🔰", callback_data="help"),
@@ -189,7 +189,7 @@ def admin_callback(client, callback_query):
         """
 🌟 𝙳𝙰𝚁𝙺 𝚆𝙾𝚁𝙼 𝙶𝙿𝚃 𝙰𝙸 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 🌟 
 
-💠 𝕄𝔸𝕀ℕ 𝔻𝔼𝕍 :- @K_HACKER_ANONYMOUS 
+💠 𝕄𝔸𝕀ℕ 𝔻𝔼𝕍 :- @aminebaggari 
 
 
         """,
@@ -220,7 +220,7 @@ def about_callback(client, callback_query):
 
 𝙒𝙝𝙖𝙩 𝙙𝙤𝙚𝙨 𝙩𝙝𝙞𝙨 𝙢𝙚𝙖𝙣 𝙛𝙤𝙧 𝙩𝙝𝙚 𝙧𝙚𝙨𝙩 𝙤𝙛 𝙪𝙨? 𝙀𝙨𝙨𝙚𝙣𝙩𝙞𝙖𝙡𝙡𝙮 𝙞𝙩 𝙗𝙤𝙞𝙡𝙨 𝙙𝙤𝙬𝙣 𝙩𝙤 𝙩𝙝𝙚 𝙨𝙥𝙚𝙚𝙙 𝙖𝙣𝙙 𝙣𝙪𝙢𝙗𝙚𝙧 𝙤𝙛 𝙨𝙘𝙖𝙢𝙨 𝙖 𝙡𝙖𝙣𝙜𝙪𝙖𝙜𝙚 𝙢𝙤𝙙𝙚𝙡 𝙘𝙖𝙣 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙚 𝙖𝙩 𝙤𝙣𝙘𝙚, 𝙬𝙝𝙞𝙘𝙝 𝙞𝙨 𝙤𝙗𝙫𝙞𝙤𝙪𝙨𝙡𝙮 𝙬𝙤𝙧𝙧𝙮𝙞𝙣𝙜 𝙬𝙝𝙚𝙣 𝙮𝙤𝙪 𝙘𝙤𝙣𝙨𝙞𝙙𝙚𝙧 𝙝𝙤𝙬 𝙛𝙖𝙨𝙩 𝙡𝙖𝙣𝙜𝙪𝙖𝙜𝙚 𝙢𝙤𝙙𝙚𝙡𝙨 𝙘𝙖𝙣 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙚 𝙩𝙚𝙭𝙩. 𝙏𝙝𝙞𝙨 𝙢𝙖𝙠𝙚𝙨 𝙘𝙮𝙗𝙚𝙧𝙖𝙩𝙩𝙖𝙘𝙠𝙨 𝙨𝙪𝙘𝙝 𝙖𝙨 𝙥𝙝𝙞𝙨𝙝𝙞𝙣𝙜 𝙚𝙢𝙖𝙞𝙡𝙨 𝙥𝙖𝙧𝙩𝙞𝙘𝙪𝙡𝙖𝙧𝙡𝙮 𝙚𝙖𝙨𝙮 𝙩𝙤 𝙧𝙚𝙥𝙡𝙞𝙘𝙖𝙩𝙚 𝙬𝙝𝙚𝙣 𝙥𝙪𝙩 𝙞𝙣 𝙩𝙝𝙚 𝙝𝙖𝙣𝙙𝙨 𝙤𝙛 𝙚𝙫𝙚𝙣 𝙖 𝙣𝙤𝙫𝙞𝙘𝙚 𝙘𝙮𝙗𝙚𝙧𝙘𝙧𝙞𝙢𝙞𝙣𝙖𝙡.
 
-💠 𝕄𝔸𝕀ℕ 𝔻𝔼𝕍 :- @K_HACKER_ANONYMOUS
+💠 𝕄𝔸𝕀ℕ 𝔻𝔼𝕍 :- @aminebaggari
 
         """,
         reply_markup=keyboard)
@@ -232,7 +232,7 @@ def help_callback(client, callback_query):
     keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
             [
-                InlineKeyboardButton(text="💠 𝙱𝚞𝚢 𝙱𝚘𝚝 𝙰𝚞𝚝𝚑 𝙵𝚛𝚘𝚖 𝙾𝚠𝚗𝚎𝚛 💠", url="https://t.me/K_HACKER_ANONYMOUS"),
+                InlineKeyboardButton(text="💠 𝙱𝚞𝚢 𝙱𝚘𝚝 𝙰𝚞𝚝𝚑 𝙵𝚛𝚘𝚖 𝙾𝚠𝚗𝚎𝚛 💠", url="https://t.me/aminebaggari"),
             ],
             [
                 InlineKeyboardButton(text="⬅️", callback_data="back"),
